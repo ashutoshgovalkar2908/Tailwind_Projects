@@ -110,7 +110,7 @@
 
             <!-- menu icon and search baar starts for small devices-->
             <div class="flex justify-start items-center gap-3 md:justify-center">
-                <div class="w-8 md:hidden">
+                <div class="w-8 md:hidden" id="hamburger">
                     <img src="Assests/menu-bar.png" alt="">
                 </div>
                 <div class="w-[100%] md:hidden sm:w-[100%]">
@@ -163,7 +163,7 @@
         </nav>
 
         <!-- nav menu's for small devices starts here -->
-        <div class="py-2 px-3 bg-white w-full absolute top-10 z-50 md:w-80 md:absolute md:top-0 md:left-0 hidden">
+        <div class="py-2 px-3 bg-white w-full absolute top-10 z-50 md:w-80 md:absolute md:top-0 md:left-0 hidden" id="menu">
             <div class="flex justify-end items-center gap-12 md:flex-col-reverse md:gap-4 md:pt-5 mb-5 relative">
                 <div class="w-full">
                     <div class="font-semibold text-xl text-center">
@@ -180,7 +180,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <div>
+                        <div id="close-icon">
                            <img src="Assests/close.png" alt="close icon" class="w-4">
                         </div>
                     </div>
@@ -244,7 +244,7 @@
     <!-- navbaar ends here -->
 
     <!-- main-section starts -->
-    <main>
+    <main id="main">
         <div class="px-2 py-4 md:px-12 md:py-7 lg:px-20 max-w-full overflow-hidden">
             <!-- HomePage Search Bubbles Section Start -->
             <section class="flex justify-center flex-col items-center space-y-3 mt-1.5 mb-12 px-3">
@@ -983,5 +983,5 @@
         </div>
     </footer>
 </body>
-
+<script src="script.js"></script>
 </html>

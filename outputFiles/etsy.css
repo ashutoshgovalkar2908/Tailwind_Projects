@@ -544,10 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -572,20 +568,8 @@ video {
   right: 0.75rem;
 }
 
-.top-9 {
-  top: 2.25rem;
-}
-
-.top-12 {
-  top: 3rem;
-}
-
 .top-10 {
   top: 2.5rem;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .z-50 {
@@ -615,6 +599,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .ml-1 {
@@ -685,8 +673,8 @@ video {
   margin-top: 4.4px;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -821,10 +809,6 @@ video {
   cursor: pointer;
 }
 
-.scroll-m-1 {
-  scroll-margin: 0.25rem;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -835,10 +819,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -877,6 +857,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -895,14 +879,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-x-2 {
@@ -1422,6 +1398,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .invert {
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1717,6 +1698,10 @@ video {
     height: 100%;
   }
 
+  .md\:w-14 {
+    width: 3.5rem;
+  }
+
   .md\:w-16 {
     width: 4rem;
   }
@@ -1737,6 +1722,10 @@ video {
     width: 58.333333%;
   }
 
+  .md\:w-80 {
+    width: 20rem;
+  }
+
   .md\:w-\[480px\] {
     width: 480px;
   }
@@ -1747,30 +1736,6 @@ video {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-10 {
-    width: 2.5rem;
-  }
-
-  .md\:w-40 {
-    width: 10rem;
-  }
-
-  .md\:w-60 {
-    width: 15rem;
-  }
-
-  .md\:w-72 {
-    width: 18rem;
-  }
-
-  .md\:w-80 {
-    width: 20rem;
-  }
-
-  .md\:w-14 {
-    width: 3.5rem;
   }
 
   .md\:grid-cols-3 {
@@ -1827,10 +1792,6 @@ video {
 
   .md\:gap-12 {
     gap: 3rem;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
   }
 
   .md\:gap-4 {
@@ -1939,12 +1900,12 @@ video {
     padding-top: 0.5rem;
   }
 
-  .md\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
   .md\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
   }
 
   .md\:text-start {
