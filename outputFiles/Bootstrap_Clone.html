@@ -12,8 +12,8 @@
 
     <!-- header start here -->
     <header class="w-full">
-        <nav class="w-full p-3 bg-gradient-to-r from-[#712cf9] to-[#712cf9f2]">
-            <div class="md:w-[85.68%] m-auto flex justify-center">
+        <nav class="w-full p-3 lg:p-2 bg-gradient-to-r from-[#712cf9] to-[#712cf9f2]">
+            <div class="md:w-[85.68%] m-auto flex justify-center lg:justify-between items-center">
                 <!-- boostrap logo,nav links options-->
                 <div class="flex gap-4">
                     <!-- boostrap logo-->
@@ -31,7 +31,7 @@
 
                     <!-- nav links options -->
                     <div class="py-2 hidden lg:block">
-                        <ul class="flex gap-3 text-slate-200">
+                        <ul class="flex gap-4 text-slate-200">
                             <li><a href="#">Docs</a></li>
                             <li><a href="#">Examples</a></li>
                             <li><a href="#">Icons</a></li>
@@ -41,9 +41,75 @@
                     </div>
                 </div>
 
-                <!-- search baar -->
-                <div></div>
-                <div></div>
+                <!-- search baar starts-->
+                <div class="hidden lg:block lg:w-1/5">
+                    <button class="w-full flex justify-between border-slate-500 border-[1px] rounded-md py-1.5 px-2 bg-[#0000001a]">
+                        <span class="flex items-center gap-1">
+                            <svg width="20" height="20" class="DocSearch-Search-Icon invert opacity-90"
+                            viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="font-semibold text-slate-400">Search</span>
+                        </span>
+                        <span class="flex items-center gap-1 rounded-sm px-[5px] bg-[#00000040] mt-[2px]">
+                            <kbd>
+                                <svg width="15" height="15" class="DocSearch-Control-Key-Icon  text-slate-400"><path d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="square"></path></svg>
+                            </kbd>
+                            <kbd class="text-sm text-slate-400 font-semibold">K</kbd>
+                        </span>
+                    </button>
+                </div>
+                <!-- search baar Ends-->
+
+                <!-- social links and dark mode -->
+                <div class="hidden lg:block">
+                    <div>
+                        <ul class="flex items-center gap-4 invert">
+                            <li>
+                                <a href="#">
+                                    <img src="Assests/icons8-github.svg" alt="githb" class="w-[17px]">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="Assests/twitter.png" alt="twitter" class="w-[17px]">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" fill-rule="evenodd" class="navbar-nav-svg" viewBox="0 0 40 41" role="img"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"></path><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"></path></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="border-r-[1px] py-4 invert opacity-40"></div>
+                            </li>
+                            <li>
+                                <button class="py-3 flex items-center gap-1">
+                                    <span class="font-medium">v5.3</span>
+                                    <div>
+                                        <img src="Assests/drop-down.png" alt="" class="w-3">
+                                    </div>
+                                </button>
+                            </li>
+                            <li>
+                                <div class="border-r-[1px] py-4 invert opacity-40"></div>
+                            </li>
+                            <li>
+                                <button class="flex items-center gap-1">
+                                    <div>
+                                       <img src="Assests/dark-mode.png" alt="" class="w-5">
+                                    </div>
+                                    <div>
+                                        <img src="Assests/drop-down.png" alt="" class="w-3">
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <!-- search button and menus for small devices -->
                 <div class="flex justify-center items-center absolute right-5 top-4 gap-3 lg:hidden">
                     <div>
@@ -66,6 +132,9 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="p-20"></div>
+    </main>
     <!-- header Ends here -->
 </body>
 
