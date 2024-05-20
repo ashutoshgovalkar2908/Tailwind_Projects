@@ -11,129 +11,182 @@
 <body>
 
     <!-- header start here -->
-    <header class="w-full">
+    <header class="w-full fixed">
         <nav class="w-full p-3 lg:p-2 bg-gradient-to-r from-[#712cf9] to-[#712cf9f2]">
-            <div class="md:w-[85.68%] m-auto flex justify-center lg:justify-between items-center">
-                <!-- boostrap logo,nav links options-->
-                <div class="flex gap-4">
-                    <!-- boostrap logo-->
-                    <div>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1 invert"
-                                viewBox="0 0 118 94" role="img">
-                                <title>Bootstrap</title>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </a>
-                    </div>
+            <div class="flex justify-center items-center lg:px-8 xl:w-[89.60%] lg:justify-start xl:m-auto">
+                <!-- boostrap logo-->
+                <div class="transition ease-in-out 0.55s hover:-rotate-6 hover:scale-110 lg:mr-5">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1 invert"
+                            viewBox="0 0 118 94" role="img">
+                            <title>Bootstrap</title>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </div>
 
-                    <!-- nav links options -->
+                <!-- nav links options -->
+                <div class="flex lg:w-full lg:justify-between lg:items-center">
                     <div class="py-2 hidden lg:block">
                         <ul class="flex gap-4 text-slate-200">
-                            <li><a href="#">Docs</a></li>
-                            <li><a href="#">Examples</a></li>
-                            <li><a href="#">Icons</a></li>
-                            <li><a href="#">Themes</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li class="hover:text-white"><a href="#">Docs</a></li>
+                            <li class="hover:text-white"><a href="#">Examples</a></li>
+                            <li class="hover:text-white"><a href="#">Icons</a></li>
+                            <li class="hover:text-white"><a href="#">Themes</a></li>
+                            <li class="hover:text-white"><a href="#">Blog</a></li>
                         </ul>
                     </div>
-                </div>
 
-                <!-- search baar starts-->
-                <div class="hidden lg:block lg:w-1/5">
-                    <button class="w-full flex justify-between border-slate-500 border-[1px] rounded-md py-1.5 px-2 bg-[#0000001a]">
-                        <span class="flex items-center gap-1">
-                            <svg width="20" height="20" class="DocSearch-Search-Icon invert opacity-90"
-                            viewBox="0 0 20 20" aria-hidden="true">
-                            <path
-                                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
-                                stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                                stroke-linejoin="round"></path>
-                            </svg>
-                            <span class="font-semibold text-slate-400">Search</span>
-                        </span>
-                        <span class="flex items-center gap-1 rounded-sm px-[5px] bg-[#00000040] mt-[2px]">
-                            <kbd>
-                                <svg width="15" height="15" class="DocSearch-Control-Key-Icon  text-slate-400"><path d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="square"></path></svg>
-                            </kbd>
-                            <kbd class="text-sm text-slate-400 font-semibold">K</kbd>
-                        </span>
-                    </button>
-                </div>
-                <!-- search baar Ends-->
-
-                <!-- social links and dark mode -->
-                <div class="hidden lg:block">
-                    <div>
-                        <ul class="flex items-center gap-4 invert">
-                            <li>
-                                <a href="#">
-                                    <img src="Assests/icons8-github.svg" alt="githb" class="w-[17px]">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="Assests/twitter.png" alt="twitter" class="w-[17px]">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" fill-rule="evenodd" class="navbar-nav-svg" viewBox="0 0 40 41" role="img"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"></path><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"></path></svg>
-                                </a>
-                            </li>
-                            <li>
-                                <div class="border-r-[1px] py-4 invert opacity-40"></div>
-                            </li>
-                            <li>
-                                <button class="py-3 flex items-center gap-1">
-                                    <span class="font-medium">v5.3</span>
-                                    <div>
-                                        <img src="Assests/drop-down.png" alt="" class="w-3">
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <div class="border-r-[1px] py-4 invert opacity-40"></div>
-                            </li>
-                            <li>
-                                <button class="flex items-center gap-1">
-                                    <div>
-                                       <img src="Assests/dark-mode.png" alt="" class="w-5">
-                                    </div>
-                                    <div>
-                                        <img src="Assests/drop-down.png" alt="" class="w-3">
-                                    </div>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- search button and menus for small devices -->
-                <div class="flex justify-center items-center absolute right-5 top-4 gap-3 lg:hidden">
-                    <div>
-                        <button>
-                            <svg width="20" height="20" class="DocSearch-Search-Icon invert opacity-90"
-                                viewBox="0 0 20 20" aria-hidden="true">
-                                <path
-                                    d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
-                                    stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                            </svg>
+                    <!-- search baar starts-->
+                    <div class="hidden w-auto lg:block lg:w-1/5 xl:w-[280px] hover:border-[4px] border-[#f4eed7] rounded-md relative -left-14">
+                        <button
+                            class="w-full flex justify-between border-slate-500 border-[1px] rounded-md py-1.5 px-2 bg-[#0000001a]">
+                            <span class="flex items-center gap-1">
+                                <svg width="20" height="20" class="DocSearch-Search-Icon invert opacity-90"
+                                    viewBox="0 0 20 20" aria-hidden="true">
+                                    <path
+                                        d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                                        stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                                <span class="font-semibold text-slate-400">Search</span>
+                            </span>
+                            <span class="flex items-center gap-1 rounded-sm px-[5px] bg-[#00000040] mt-[2px]">
+                                <kbd>
+                                    <svg width="15" height="15" class="DocSearch-Control-Key-Icon  text-slate-400">
+                                        <path
+                                            d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953"
+                                            stroke-width="1.2" stroke="currentColor" fill="none"
+                                            stroke-linecap="square">
+                                        </path>
+                                    </svg>
+                                </kbd>
+                                <kbd class="text-sm text-slate-400 font-semibold">K</kbd>
+                            </span>
                         </button>
                     </div>
-                    <div>
-                        <button>
-                            <img src="Assests/more.png" alt="" class="w-8 invert opacity-90">
-                        </button>
+                    <!-- search baar Ends-->
+
+                    <!-- social links and dark mode -->
+                    <div class="hidden lg:block">
+                        <div>
+                            <ul class="flex items-center gap-4 invert">
+                                <li>
+                                    <a href="#">
+                                        <img src="Assests/icons8-github.svg" alt="githb"
+                                            class="w-[17px] opacity-80 hover:opacity-95">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="Assests/twitter.png" alt="twitter"
+                                            class="w-[17px] opacity-80 hover:opacity-95">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" fill-rule="evenodd"
+                                            class="navbar-nav-svg opacity-80 hover:opacity-90" viewBox="0 0 40 41"
+                                            role="img">
+                                            <title>Open Collective</title>
+                                            <path fill-opacity=".4"
+                                                d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z">
+                                            </path>
+                                            <path
+                                                d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="border-r-[1px] py-4 invert opacity-40"></div>
+                                </li>
+                                <li>
+                                    <button class="py-3 flex items-center gap-1">
+                                        <span class="font-medium opacity-85 hover:opacity-95">v5.3</span>
+                                        <div>
+                                            <img src="Assests/drop-down.png" alt="" class="w-3">
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <div class="border-r-[1px] py-4 invert opacity-40"></div>
+                                </li>
+                                <li>
+                                    <button class="flex items-center gap-1">
+                                        <div>
+                                            <img src="Assests/dark-mode.png" alt=""
+                                                class="w-5 opacity-80 hover:opacity-95">
+                                        </div>
+                                        <div>
+                                            <img src="Assests/drop-down.png" alt="" class="w-3">
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- search button and menus for small devices -->
+                    <div class="flex justify-center items-center absolute right-5 top-4 gap-3 lg:hidden">
+                        <div>
+                            <button>
+                                <svg width="20" height="20" class="DocSearch-Search-Icon invert opacity-90"
+                                    viewBox="0 0 20 20" aria-hidden="true">
+                                    <path
+                                        d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                                        stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="Assests/more.png" alt="" class="w-8 invert opacity-90">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="p-20"></div>
+        <div class="w-full bg-gradient-to-r from-[#184486,#184077] via-[#213859] to-[#4D4E41,#6F694A] py-24">
+            <div class="lg:px-5">
+                <div class="w-full p-6 md:w-[70%] md:m-auto lg:w-[60%]">
+                    <div class="flex items-center justify-center shadow-inner mb-5">
+                        <div class="rounded-full bg-[#ffe484] p-1 lg:w-fit lg:py-1.5 px-2.5 shadow-xl shadow-[#32373bbf]">
+                            <div class="text-center">
+                                <a href="#">
+                                    <span>
+                                        <span class="font-semibold">New!</span>
+                                        <span>Never Ending Support For Bootstrap &#8594;</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h1 class="text-4xl text-center text-white font-semibold sm:text-5xl">Build fast, responsive sites with Bootstrap</h1>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-center text-[#dee2e6bf] md:text-xl lg:text-2xl">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+                    </div>
+                    <div class="w-full flex flex-col gap-4 lg:flex-row lg:justify-center">
+                        <div class="border-slate-500 border-[1px] rounded-md pl-5 pr-3 py-4 lg:flex lg:justify-center text-white bg-[#dee2e613]">
+                            <code class="before:content-['$'] before:text-[#868e96] before:mr-3"><span class="text-[17.5px]">npm i bootstrap@5.3.3</span></code>
+                            <button class="hidden lg:block"></button>
+                        </div>
+                          <a href="#" class="bg-[#712cf9] rounded-md pl-5 pr-3 py-4 flex justify-center text-white font-semibold text-xl">
+                            <svg class="w-6 h-6 fill-current" aria-hidden="true"><use xlink:href="#book-half"></use></svg>
+                            Read the docs
+                          </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- header Ends here -->
 </body>
