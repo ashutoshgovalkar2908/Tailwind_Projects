@@ -11,7 +11,7 @@
 <body>
 
     <!-- header start here -->
-    <header class="w-full fixed">
+    <header class="w-full sticky top-0">
         <nav class="w-full p-3 lg:p-2 bg-gradient-to-r from-[#712cf9] to-[#712cf9f2]">
             <div class="flex justify-center items-center lg:px-8 xl:w-[89.60%] lg:justify-start xl:m-auto">
                 <!-- boostrap logo-->
@@ -40,7 +40,8 @@
                     </div>
 
                     <!-- search baar starts-->
-                    <div class="hidden w-auto lg:block lg:w-1/5 xl:w-[280px] hover:border-[4px] border-[#f4eed7] rounded-md relative -left-14">
+                    <div
+                        class="hidden w-auto lg:block lg:w-1/5 xl:w-[280px] hover:border-[4px] border-[#f4eed7] rounded-md relative -left-14">
                         <button
                             class="w-full flex justify-between border-slate-500 border-[1px] rounded-md py-1.5 px-2 bg-[#0000001a]">
                             <span class="flex items-center gap-1">
@@ -153,11 +154,12 @@
         </nav>
     </header>
     <main>
-        <div class="w-full bg-gradient-to-r from-[#184486,#184077] via-[#213859] to-[#4D4E41,#6F694A] py-24">
+        <div class="w-full bg-gradient-to-r from-[#184486,#184077] via-[#213859] to-[#4D4E41,#6F694A]  py-12">
             <div class="lg:px-5">
-                <div class="w-full p-6 md:w-[70%] md:m-auto lg:w-[60%]">
+                <div class="w-full px-6  md:m-auto md:w-[70%] lg:w-[65%] xl:w-[60%] ">
                     <div class="flex items-center justify-center shadow-inner mb-5">
-                        <div class="rounded-full bg-[#ffe484] p-1 lg:w-fit lg:py-1.5 px-2.5 shadow-xl shadow-[#32373bbf]">
+                        <div
+                            class="rounded-full bg-[#ffe484] p-1 lg:w-fit sm:py-1.5 sm:px-3.5 shadow-xl shadow-[#32373bbf]">
                             <div class="text-center">
                                 <a href="#">
                                     <span>
@@ -168,21 +170,37 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-4">
-                        <h1 class="text-4xl text-center text-white font-semibold sm:text-5xl">Build fast, responsive sites with Bootstrap</h1>
+                    <div class="w-full mt-8 mb-4 lg:mt-6">
+                        <div class="w-[200px] m-auto hidden sm:block">
+                            <img src="Assests/bootstrap-logo-shadow.png" alt="">
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <p class="text-center text-[#dee2e6bf] md:text-xl lg:text-2xl">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+                    <div class="mb-4 md:mb-6">
+                        <h1
+                            class="text-[38px] leading-10 text-center text-white font-semibold sm:text-5xl md:text-[54px] lg:text-[64px]">
+                            Build fast, responsive sites with Bootstrap</h1>
+                    </div>
+                    <div class="mb-4 md:mb-6">
+                        <p class="text-center text-[#dee2e6bf] md:text-xl lg:text-2xl">Powerful, extensible, and
+                            feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system
+                            and components, and bring projects to life with powerful JavaScript plugins.</p>
                     </div>
                     <div class="w-full flex flex-col gap-4 lg:flex-row lg:justify-center">
-                        <div class="border-slate-500 border-[1px] rounded-md pl-5 pr-3 py-4 lg:flex lg:justify-center text-white bg-[#dee2e613]">
-                            <code class="before:content-['$'] before:text-[#868e96] before:mr-3"><span class="text-[17.5px]">npm i bootstrap@5.3.3</span></code>
-                            <button class="hidden lg:block"></button>
+                        <div class="border-slate-500 border-[1px] rounded-md px-5 py-4 lg:flex lg:justify-center lg:items-center gap-4 text-white bg-[#dee2e613]">
+                            <code
+                                class="before:content-['$'] before:text-[#868e96] before:mr-3"><span class="text-[17.5px]">npm i bootstrap@5.3.3</span>
+                            </code>
+                            <button class="hidden lg:block">
+                               <div>
+                                <img src="Assests/clipboard.png" alt="" class="w-6 invert">
+                               </div>
+                            </button>
                         </div>
-                          <a href="#" class="bg-[#712cf9] rounded-md pl-5 pr-3 py-4 flex justify-center text-white font-semibold text-xl">
-                            <svg class="w-6 h-6 fill-current" aria-hidden="true"><use xlink:href="#book-half"></use></svg>
+                        <a href="#"
+                            class="bg-[#712cf9] rounded-md px-8 py-4 flex justify-center items-center gap-2 text-white font-semibold text-xl">
+                            <img src="Assests/book.png" alt="" class="w-5 h-5 invert">
                             Read the docs
-                          </a>
+                        </a>
                     </div>
                 </div>
             </div>
