@@ -653,6 +653,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.-mx-5 {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -923,6 +928,10 @@ video {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-\[130px\] {
   max-width: 130px;
 }
@@ -1139,6 +1148,10 @@ video {
 
 .border-r-\[1px\] {
   border-right-width: 1px;
+}
+
+.border-t-\[1px\] {
+  border-top-width: 1px;
 }
 
 .border-solid {
@@ -1375,6 +1388,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-1 {
@@ -1642,6 +1659,10 @@ video {
   line-height: 1.5rem;
 }
 
+.text-customfont {
+  font-size: calc(1.425rem + 2.1vw);
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1657,8 +1678,8 @@ video {
   line-height: 1rem;
 }
 
-.text-customfont {
-  font-size: calc(1.425rem + 2.1vw);
+.text-\[\.875em\] {
+  font-size: .875em;
 }
 
 .font-bold {
@@ -1799,6 +1820,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#c8d0d7\] {
+  --tw-text-opacity: 1;
+  color: rgb(200 208 215 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2015,6 +2041,11 @@ video {
   border-bottom-width: 2px;
 }
 
+.hover\:bg-\[\#0b5ed7\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 94 215 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-\[\#CCEBFF\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(204 235 255 / var(--tw-bg-opacity));
@@ -2082,6 +2113,14 @@ video {
 .hover\:shadow-slate-400:hover {
   --tw-shadow-color: #94a3b8;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:transition:hover {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .hover\:transition-all:hover {
