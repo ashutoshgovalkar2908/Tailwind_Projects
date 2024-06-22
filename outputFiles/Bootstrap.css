@@ -1039,6 +1039,14 @@ video {
   gap: 2rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -2405,6 +2413,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
   .md\:w-10 {
     width: 2.5rem;
   }
@@ -2459,6 +2471,14 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:grid-cols-3 {
