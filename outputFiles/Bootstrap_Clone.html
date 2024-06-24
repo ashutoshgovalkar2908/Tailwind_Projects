@@ -14,8 +14,8 @@
     <header class="w-full sticky top-0 z-10">
 
         <!-- nav starts here -->
-        <nav class="w-full p-3 lg:p-2 bg-gradient-to-r from-[#712cf9] to-[#712cf9f2]">
-            <div class="flex justify-center items-center lg:px-8 xl:w-[89.60%] lg:justify-start xl:m-auto">
+        <nav class="w-full  bg-gradient-to-r from-[#712cf9] to-[#712cf9f2]">
+            <div class="flex justify-center items-center p-3 lg:px-8 xl:w-[89.60%] lg:justify-start xl:m-auto">
                 <!-- boostrap logo start-->
                 <div class="transition ease-in-out 0.55s hover:-rotate-6 hover:scale-110 lg:mr-5">
                     <a href="#">
@@ -154,7 +154,76 @@
                     </div>
                 </div>
                 <!-- nav links options ends here -->
+            </div>
 
+            <!-- navbaar for small devices start here -->
+            <div class="bg-[#712cf9] fixed top-0 w-full h-fit lg:hidden">
+                <div class="pt-4 px-6 flex items-center justify-between">
+                    <h4 class="text-white text-xl font-semibold">Bootstrap</h4>
+                    <button>
+                        <img src="Assests/close.png" alt="close-icon" class="w-4 invert">
+                    </button>
+                </div>
+                <div class="px-6 overflow-y-auto">
+                    <hr class="opacity-20 my-4">
+                    <ul class="flex flex-wrap text-[#dee2e6]">
+                        <li class="w-1/2 my-2">
+                            <a href="#" class="py-2">Docs</a>
+                        </li>
+                        <li class="w-1/2 my-2">
+                            <a href="#" class="py-2">Examples</a>
+                        </li>
+                        <li class="w-1/2 my-2">
+                            <a href="#" class="py-2">Icons</a>
+                        </li>
+                        <li class="w-1/2 my-2">
+                            <a href="#" class="py-2">Themes</a>
+                        </li>
+                        <li class="w-1/2 my-2">
+                            <a href="#" class="py-2">Blog</a>
+                        </li>
+                    </ul>
+                    <hr class="opacity-20 my-4">
+                    <ul class="flex flex-wrap text-[#dee2e6] overflow-y-auto">
+                        <li class="w-1/2">
+                            <a href="#" class="py-2 flex items-center">
+                                <img src="Assests/icons8-github.svg" alt="github-icon" class="w-4 h-4 invert">
+                                <small class="text-[.875em] ml-2">Github</small>
+                            </a>
+                        </li>
+                        <li class="w-1/2">
+                            <a href="#" class="py-2 flex items-center">
+                                <img src="Assests/twitter.png" alt="twitter-icon" class="w-4 h-4 invert">
+                                <small class="text-[.875em] ml-2">Twitter</small>
+                            </a>
+                        </li>
+                        <li class="w-1/2">
+                            <a href="#" class="py-2 flex items-center">
+                                <img src="Assests/collective.svg" alt="Open Collective-icon" class="w-4 h-4 invert">
+                                <small class="text-[.875em] ml-2">Open Collective</small>
+                            </a>
+                        </li>
+                        <li class="w-full">
+                            <hr class="opacity-20 my-4">
+                        </li>
+                        <li class="w-1/2">
+                            <a href="#" class="py-2 flex items-center">
+                                <span>Bootstrap v5.3</span>
+                                <img src="Assests/down-arrow.png" alt="down-arrow" class="w-3 ml-2 invert">
+                            </a>
+                        </li>
+                        <li class="w-full">
+                            <hr class="opacity-20 my-4">
+                        </li>
+                        <li class="w-1/2">
+                            <a href="#" class="py-2 flex items-center">
+                                <img src="Assests/dark-mode.png" alt="dark-mod" class="w-3 ml-2 invert">
+                                <span>Toggle theme</span>
+                                <img src="Assests/down-arrow.png" alt="down-arrow" class="w-3 ml-2 invert">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- nav ends here -->
@@ -455,7 +524,7 @@
                     </p>
                 </div>
                 <div>
-                    <p class="flex items-center gap-2 cursor-pointer learnMore">
+                    <p class="flex items-center gap-1 cursor-pointer learnMore">
                         <a href="#"
                             class="text-[#6ea8fe] font-semibold underline underline-offset-4 md:text-xl hover:text-[rgba(139,185,254)]">Learn
                             more about customizing
@@ -609,7 +678,7 @@
                 <div>
                     <p class="cursor-pointer learnMore">
                         <a href="#"
-                            class="text-[#6ea8fe] font-semibold underline underline-offset-4 flex items-center gap-2 md:text-xl hover:text-[rgba(139,185,254)]">Learn
+                            class="text-[#6ea8fe] font-semibold underline underline-offset-4 flex items-center gap-1 md:text-xl hover:text-[rgba(139,185,254)]">Learn
                             more about CSS variables
                             <img src="Assests/forward-arrow.svg" alt="forward-arrow" class="w-4 lg:w-5 pt-1 forward">
                         </a>
@@ -859,9 +928,9 @@
                     </div>
                     <p class="cursor-pointer mb-4 learnMore">
                             <a href="#"
-                                class="text-[#6ea8fe] flex items-center gap-3 font-semibold underline underline-offset-4 hover:text-[rgba(139,185,254)]">Explore
+                                class="text-[#6ea8fe] flex items-center gap-1 font-semibold underline underline-offset-4 hover:text-[rgba(139,185,254)]">Explore
                                 customized&nbsp components
-                                <img src="Assests/forward-arrow.svg" alt="forward-arrow" class="w-4 lg:w-5 pt-1forward">
+                                <img src="Assests/forward-arrow.svg" alt="forward-arrow" class="w-4 lg:w-5 pt-1 forward">
                             </a>
                     </p>
                 </div>
@@ -1134,7 +1203,7 @@
                         </p>
                     </div>
                     <div>
-                        <p class="cursor-pointer learMore">
+                        <p class="cursor-pointer learnMore">
                             <a href="#"
                                 class="text-[#6ea8fe] font-semibold underline underline-offset-4 flex items-center gap-2 md:text-xl hover:text-[rgba(139,185,254)]">Get Bootstrap Icons
                                 <img src="Assests/forward-arrow.svg" alt="forward-arrow" class="w-4 lg:w-5 pt-1 forward">
@@ -1165,7 +1234,7 @@
                         </p>
                     </div>
                     <div>
-                        <p class="cursor-pointer learMore">
+                        <p class="cursor-pointer learnMore">
                             <a href="#"
                                 class="text-[#6ea8fe] font-semibold underline underline-offset-4 flex items-center gap-2 md:text-xl hover:text-[rgba(139,185,254)]">Browse Bootstrap Themes
                                 <img src="Assests/forward-arrow.svg" alt="forward-arrow" class="w-4 lg:w-5 pt-1 forward">

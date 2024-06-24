@@ -8,7 +8,7 @@ learnMoreElements.forEach(element => {
     element.addEventListener("mouseleave", reverseIcon);
 });
 
-// Select all elements with the .forward class
+// Select all forward-arrow img elements with the .forward class
 const forwardIcons = document.querySelectorAll(".forward");
 
 // Function to move the icon forward
@@ -16,7 +16,7 @@ function forwardIcon() {
     // Find the corresponding icon within the same .learnMore element
     const icon = this.querySelector(".forward");
     if (icon) {
-        icon.style.transform = "translateX(8px)";
+        icon.style.transform = "translateX(5px)";
         icon.style.transition = "transform .2s ease-in-out";
     }
 }
