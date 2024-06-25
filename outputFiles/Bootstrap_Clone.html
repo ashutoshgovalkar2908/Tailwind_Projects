@@ -146,21 +146,19 @@
                                 </svg>
                             </button>
                         </div>
-                        <div>
-                            <button>
-                                <img src="Assests/more.png" alt="" class="w-8 invert opacity-90">
-                            </button>
-                        </div>
+                        <button id="openNav">
+                            <img src="Assests/more.png" alt="show-nav-baar-btn" class="w-8 invert opacity-90">
+                        </button>
                     </div>
                 </div>
                 <!-- nav links options ends here -->
             </div>
 
             <!-- navbaar for small devices start here -->
-            <div class="bg-[#712cf9] fixed top-0 w-full h-fit lg:hidden">
+            <div class="bg-[#712cf9] fixed top-0 right-0 max-w-[400px] h-fit  hidden" id="navSmall">
                 <div class="pt-4 px-6 flex items-center justify-between">
                     <h4 class="text-white text-xl font-semibold">Bootstrap</h4>
-                    <button>
+                    <button id="clsBtn">
                         <img src="Assests/close.png" alt="close-icon" class="w-4 invert">
                     </button>
                 </div>
@@ -184,7 +182,7 @@
                         </li>
                     </ul>
                     <hr class="opacity-20 my-4">
-                    <ul class="flex flex-wrap text-[#dee2e6] overflow-y-auto">
+                    <ul class="flex flex-wrap text-[#dee2e6]">
                         <li class="w-1/2">
                             <a href="#" class="py-2 flex items-center">
                                 <img src="Assests/icons8-github.svg" alt="github-icon" class="w-4 h-4 invert">
@@ -209,22 +207,24 @@
                         <li class="w-1/2">
                             <a href="#" class="py-2 flex items-center">
                                 <span>Bootstrap v5.3</span>
-                                <img src="Assests/down-arrow.png" alt="down-arrow" class="w-3 ml-2 invert">
+                                <img src="Assests/down-arrow.png" alt="down-arrow" class="w-[10px] ml-2 invert">
                             </a>
                         </li>
                         <li class="w-full">
                             <hr class="opacity-20 my-4">
                         </li>
-                        <li class="w-1/2">
-                            <a href="#" class="py-2 flex items-center">
-                                <img src="Assests/dark-mode.png" alt="dark-mod" class="w-3 ml-2 invert">
+                        <li class="w-full mb-4">
+                            <a href="#" class="py-2 flex items-center gap-1">
+                                <img src="Assests/dark-mode.png" alt="dark-mod" class="w-4 invert">
                                 <span>Toggle theme</span>
-                                <img src="Assests/down-arrow.png" alt="down-arrow" class="w-3 ml-2 invert">
+                                <img src="Assests/down-arrow.png" alt="down-arrow" class="w-[10px] invert">
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <!-- navbaar for small devices ends here -->
+
         </nav>
         <!-- nav ends here -->
 

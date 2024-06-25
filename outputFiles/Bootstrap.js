@@ -30,3 +30,22 @@ function reverseIcon() {
         icon.style.transition = "transform .2s ease-in-out";
     }
 }
+
+
+//functions for hide and show nav baar for small devices
+
+let openNav = document.querySelector("#openNav");
+let closebtn = document.querySelector("#clsBtn");
+
+openNav.addEventListener("click", toggleNav);
+closebtn.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    let navSmall = document.querySelector("#navSmall");
+
+    if(navSmall.style.display == "block"){
+        navSmall.style.display = "none";
+    }else{
+        navSmall.style.display = "block";
+    }
+}
