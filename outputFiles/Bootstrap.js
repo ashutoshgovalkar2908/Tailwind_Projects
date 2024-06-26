@@ -50,6 +50,8 @@ function toggleNav(){
     }
 }
 
+//functions for chnage backgroundColor and color for components ,utility API section2 ul's li
+
 let customizeBtn1 = document.querySelector("#cstmBtn1");
 let customizeBtn2 = document.querySelector("#cstmBtn2");
 let customizeBtn3 = document.querySelector("#cstmBtn3");
@@ -62,6 +64,7 @@ function roundedBorder1(){
     customizeBtn2.style.backgroundColor = "#0d6efd";
     customizeBtn2.style.borderRadius = "6px";
     customizeBtn2.style.color = "#fff";
+    customizeBtn2.style.transition = "all .3s"
     customizeBtn1.style.backgroundColor = "";
     customizeBtn1.style.color = "#6ea8fe";
     customizeBtn3.style.backgroundColor = "";
@@ -71,6 +74,7 @@ function roundedBorder2(){
     customizeBtn1.style.backgroundColor = "#0d6efd";
     customizeBtn1.style.borderRadius = "6px";
     customizeBtn1.style.color = "#fff";
+    customizeBtn1.style.transition = "all .3s"
     customizeBtn2.style.backgroundColor = "";
     customizeBtn2.style.color = "#6ea8fe";
     customizeBtn3.style.backgroundColor = "";
@@ -80,6 +84,7 @@ function roundedBorder3(){
     customizeBtn3.style.backgroundColor = "#0d6efd";
     customizeBtn3.style.borderRadius = "6px";
     customizeBtn3.style.color = "#fff";
+    customizeBtn3.style.transition = "all .3s"
     customizeBtn1.style.backgroundColor = "";
     customizeBtn1.style.color = "#6ea8fe";
     customizeBtn2.style.backgroundColor = "";
@@ -87,10 +92,34 @@ function roundedBorder3(){
 }
 
 let customizeBtn4 = document.querySelector("#cstmBtn4");
-customizeBtn4.addEventListener("click", rounded);
+customizeBtn4.addEventListener("click", rounded2);
 
-function rounded(){
+let customizeBtn5 = document.querySelector("#cstmBtn5");
+customizeBtn5.addEventListener("click", rounded1);
+
+let customizeBtn6 = document.querySelector("#cstmBtn6");
+customizeBtn6.addEventListener("click", rounded3);
+
+function rounded1(){
+    customizeBtn5.style.color = "#6ea8fe";
+    customizeBtn5.style.backgroundColor = "#fff";
+    customizeBtn5.style.transition = "all .4s"
+    customizeBtn4.style.backgroundColor = "#0d6efd";
+    customizeBtn6.style.backgroundColor = "#0d6efd";
+}
+
+function rounded2(){
     customizeBtn4.style.color = "#6ea8fe";
     customizeBtn4.style.backgroundColor = "#fff";
-    customizeBtn4.style.border = "2px solid #fff";
+    customizeBtn4.style.transition = "all .4s"
+    customizeBtn5.style.backgroundColor = "#0d6efd";
+    customizeBtn6.style.backgroundColor = "#0d6efd";
+}
+
+function rounded3(){
+    customizeBtn6.style.color = "#6ea8fe";
+    customizeBtn6.style.backgroundColor = "#fff";
+    customizeBtn6.style.transition = "all .4s"
+    customizeBtn4.style.backgroundColor = "#0d6efd";
+    customizeBtn5.style.backgroundColor = "#0d6efd";
 }
