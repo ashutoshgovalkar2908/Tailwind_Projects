@@ -36,6 +36,8 @@ function reverseIcon() {
 
 let openNav = document.querySelector("#openNav");
 let closebtn = document.querySelector("#clsBtn");
+let main = document.querySelector("#main");
+let head = document.querySelector("#head");
 
 openNav.addEventListener("click", toggleNav);
 closebtn.addEventListener("click", toggleNav);
@@ -45,8 +47,12 @@ function toggleNav(){
 
     if(navSmall.style.display == "block"){
         navSmall.style.display = "none";
+        main.style.opacity = "1";
+        main.style.transition = "all .188s";
     }else{
         navSmall.style.display = "block";
+        main.style.opacity = "0.5";
+        main.style.transition = "all .188s";
     }
 }
 
