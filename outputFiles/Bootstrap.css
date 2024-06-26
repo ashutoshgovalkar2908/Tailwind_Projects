@@ -580,10 +580,6 @@ video {
   right: -0.25rem;
 }
 
-.-right-64 {
-  right: -16rem;
-}
-
 .bottom-8 {
   bottom: 2rem;
 }
@@ -594,6 +590,10 @@ video {
 
 .left-2 {
   left: 0.5rem;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .right-1 {
@@ -626,10 +626,6 @@ video {
 
 .top-5 {
   top: 1.25rem;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .z-10 {
@@ -1156,6 +1152,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-l-full {
